@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class DragAndDropActivity extends AppCompatActivity {
 
 	private DragAndDropPlayground dragAndDropPlayground;
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_draganddrop);
 		dragAndDropPlayground = (DragAndDropPlayground) findViewById(R.id.playground);
 
 		bucketsViewGroup = (ViewGroup) findViewById(R.id.buckets);
