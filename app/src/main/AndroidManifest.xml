@@ -14,7 +14,7 @@
 			android:theme="@style/AppTheme.NoActionBar">
 
 		</activity>
-		<activity android:name=".TouchActivity">
+		<activity android:name=".TestActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 
