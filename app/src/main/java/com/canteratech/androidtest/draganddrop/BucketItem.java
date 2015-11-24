@@ -1,4 +1,4 @@
-package com.canteratech.androidtest;
+package com.canteratech.androidtest.draganddrop;
 
 import android.view.View;
 

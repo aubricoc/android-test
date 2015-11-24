@@ -1,4 +1,4 @@
-package com.canteratech.androidtest;
+package com.canteratech.androidtest.draganddrop;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.canteratech.androidtest.R;
 
 import java.util.ArrayList;
 import java.util.List;

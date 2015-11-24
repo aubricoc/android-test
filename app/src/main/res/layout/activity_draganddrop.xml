@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.canteratech.androidtest.DragAndDropPlayground
+<com.canteratech.androidtest.draganddrop.DragAndDropPlayground
 	android:id="@+id/playground"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
@@ -46,4 +46,4 @@
 			android:background="@android:color/holo_red_dark"
 			android:orientation="horizontal" />
 	</LinearLayout>
-</com.canteratech.androidtest.DragAndDropPlayground>
+</com.canteratech.androidtest.draganddrop.DragAndDropPlayground>

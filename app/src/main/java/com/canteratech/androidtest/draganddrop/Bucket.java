@@ -1,6 +1,5 @@
-package com.canteratech.androidtest;
+package com.canteratech.androidtest.draganddrop;
 
-import android.graphics.Bitmap;
 import android.view.View;
 import android.view.ViewGroup;
 

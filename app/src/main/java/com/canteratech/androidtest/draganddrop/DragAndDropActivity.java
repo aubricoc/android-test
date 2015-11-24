@@ -1,10 +1,12 @@
-package com.canteratech.androidtest;
+package com.canteratech.androidtest.draganddrop;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.canteratech.androidtest.R;
 
 import java.util.ArrayList;
 import java.util.List;
