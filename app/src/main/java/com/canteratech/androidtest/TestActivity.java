@@ -1,5 +1,9 @@
 package com.canteratech.androidtest;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,26 +21,28 @@ public class TestActivity extends AppCompatActivity {
 				go();
 			}
 		});
+		findViewById(R.id.stop).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				stop();
+			}
+		});
 	}
+
+
 
 	private void go() {
-		printLocation(R.id.hello);
-		printLocation(R.id.go);
-		printLocation(R.id.scroll);
-		printLocation(R.id.list);
-		printLocation(R.id.paco);
-		printLocation(R.id.pepe);
-		printLocation(R.id.poco);
+		Intent intent = new Intent(this, TestReceiver.class);
+		PendingIntent pintent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+		AlarmManager alarm = (AlarmManager) getSystemService(ALARM_SERVICE);
+		alarm.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 2000, pintent);
 	}
 
-	private void printLocation(int id) {
-		int[] loc = new int[2];
-		View view = findViewById(id);
-		System.out.println("-----" + id);
-		view.getLocationOnScreen(loc);
-		System.out.println("getLocationOnScreen X:" + loc[0] + " Y: " + loc[1]);
-		view.getLocationInWindow(loc);
-		System.out.println("getLocationInWindow X:" + loc[0] + " Y: " + loc[1]);
-		System.out.println("-----" + id);
+	private void stop() {
+		AlarmManager alarm = (AlarmManager) getSystemService(ALARM_SERVICE);
+		Intent intent = new Intent(this, TestReceiver.class);
+		PendingIntent pintent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+		alarm.cancel(pintent);
 	}
 }

@@ -21,38 +21,9 @@
 		android:layout_height="wrap_content"
 		android:text="Go" />
 
-	<ScrollView
-		android:id="@+id/scroll"
+	<Button
+		android:id="@+id/stop"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent">
-
-		<LinearLayout
-			android:id="@+id/list"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical">
-
-			<TextView
-				android:id="@+id/paco"
-				android:layout_width="match_parent"
-				android:layout_height="200dp"
-				android:background="@android:color/holo_orange_dark"
-				android:text="Paco" />
-
-			<TextView
-				android:id="@+id/pepe"
-				android:layout_width="match_parent"
-				android:layout_height="200dp"
-				android:background="@android:color/holo_green_dark"
-				android:text="Pepe" />
-
-			<TextView
-				android:id="@+id/poco"
-				android:layout_width="match_parent"
-				android:layout_height="200dp"
-				android:background="@android:color/holo_blue_dark"
-				android:text="Poco" />
-		</LinearLayout>
-
-	</ScrollView>
+		android:layout_height="wrap_content"
+		android:text="Stop" />
 </LinearLayout>
