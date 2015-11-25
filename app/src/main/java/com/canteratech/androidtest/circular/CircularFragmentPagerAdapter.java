@@ -77,18 +77,5 @@ public class CircularFragmentPagerAdapter extends FragmentPagerAdapter {
 			position--;
 		}
 		notifyDataSetChanged();
-
-//		switch (position) {
-//			case 0:
-//				Fragment aux = fragments.remove(2);
-//				fragments.add(0, aux);
-//				notifyDataSetChanged();
-//				break;
-//			case 2:
-//				aux = fragments.remove(0);
-//				fragments.add(aux);
-//				notifyDataSetChanged();
-//				break;
-//		}
 	}
 }

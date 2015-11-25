@@ -59,6 +59,10 @@ public class CircularViewPagerActivity extends AppCompatActivity {
 		adapter.add(PlaceholderFragment.newInstance(2, android.R.color.holo_green_dark));
 		adapter.add(PlaceholderFragment.newInstance(3, android.R.color.holo_blue_dark));
 		adapter.add(PlaceholderFragment.newInstance(4, android.R.color.holo_purple));
+		adapter.add(PlaceholderFragment.newInstance(5, android.R.color.holo_red_dark));
+		adapter.add(PlaceholderFragment.newInstance(6, android.R.color.holo_green_light));
+		adapter.add(PlaceholderFragment.newInstance(7, android.R.color.holo_orange_light));
+		adapter.add(PlaceholderFragment.newInstance(8, android.R.color.holo_blue_light));
 
 		// Set up the ViewPager with the sections adapter.
 
@@ -102,6 +106,8 @@ public class CircularViewPagerActivity extends AppCompatActivity {
 			adapter.remove(adapter.getItem(adapter.getCount() - 1));
 		} else if (id == R.id.action_info) {
 			System.out.println("POSITION: " + mViewPager.getCurrentItem() + " COUNT: " + adapter.getCount());
+		} else if (id == R.id.action_go) {
+			mViewPager.setCurrentItem(0);
 		}
 
 		return super.onOptionsItemSelected(item);
